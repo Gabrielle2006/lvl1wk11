@@ -187,3 +187,16 @@ section.two div:nth-child(6){
     grid-column-start: 1;
     grid-column-end: span 4;
 }
+section.three article{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: 120px;
+}
+
+section.three div:nth-child(2){
+    order: 1;
+}
+section.three div:nth-child(5){
+    grid-area: 2/1/span 2/ span 2;
+}
